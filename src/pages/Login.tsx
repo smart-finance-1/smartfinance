@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../store/AuthContext';
 import api from '../lib/api';
 import { motion } from 'motion/react';
@@ -69,12 +69,6 @@ export const Login = () => {
           </button>
         </form>
 
-        <p className="mt-6 text-center text-sm text-zinc-500 dark:text-zinc-400">
-          Don't have an account?{' '}
-          <Link to="/register" className="text-emerald-600 dark:text-emerald-500 font-medium hover:underline">
-            Sign up
-          </Link>
-        </p>
       </motion.div>
     </div>
   );

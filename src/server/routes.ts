@@ -23,26 +23,6 @@ export const authenticate = (req: any, res: any, next: any) => {
 };
 
 // Auth Routes
-router.post('/auth/register', async (req, res) => {
-  const { name, email, password } = req.body;
-  const db = getDb();
-  
-  try {
-    const hashedPassword = await bcrypt.hash(password, 10);
-    const stmt = db.prepare('INSERT INTO users (name, email, password) VALUES (?, ?, ?)');
-    const info = stmt.run(name, email, hashedPassword);
-    
-    const token = jwt.sign({ id: info.lastInsertRowid, email }, JWT_SECRET, { expiresIn: '7d' });
-    res.json({ token, user: { id: info.lastInsertRowid, name, email } });
-  } catch (err: any) {
-    if (err.message.includes('UNIQUE constraint failed')) {
-      res.status(400).json({ error: 'Email already exists' });
-    } else {
-      res.status(500).json({ error: err.message });
-    }
-  }
-});
-
 router.post('/auth/login', async (req, res) => {
   const { email, password } = req.body;
   const db = getDb();
