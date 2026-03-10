@@ -12,6 +12,8 @@ app.use(express.json());
 // Keep DB initialization idempotent by relying on table IF NOT EXISTS.
 initDb();
 
+// Handle both '/api/*' and '/*' path styles used by serverless adapters.
 app.use('/api', apiRoutes);
+app.use(apiRoutes);
 
 export default app;
