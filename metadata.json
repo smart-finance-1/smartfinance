@@ -1,0 +1,5 @@
+{
+  "name": "SmartFinance AI",
+  "description": "A modern AI-powered Finance & Budget Tracking Web Application.",
+  "requestFramePermissions": ["microphone"]
+}
