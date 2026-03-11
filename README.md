@@ -1,20 +1,22 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Subash Kodali
 
-# Run and deploy your AI Studio app
+- **Email:** kodalisubash140@gmail.com  
+- **GitHub:** [subashkodali](https://github.com/subashkodali)  
+- **Instagram:** [subash_kodali_](https://www.instagram.com/subash_kodali_/)
 
-This contains everything you need to run your app locally.
+## Education
+- Diploma in Computer Engineering
 
-View your app in AI Studio: https://ai.studio/apps/e63669c8-b9de-40ae-abca-d225daf67963
+## Technical Skills
+- JavaScript ES6+
+- HTML5
+- CSS3
+- OpenWeatherMap API
+- Chart.js
+- Leaflet Maps
+- EmailJS
+- Lottie Animations
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Projects
+- [Live Weather Monitoring](https://live-weather-monitoring.vercel.app/)
+- [Campus Hub](https://campus-hub-siddharth.vercel.app/)
